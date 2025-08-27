@@ -1,0 +1,66 @@
+.login-status-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+
+.security-btn {
+  min-width: 95px;
+  padding: 8px 16px;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  background-color: #205b8d;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+  min-width: 140px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+.dropdown-menu li a {
+  color: #205b8d;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background: #f0f0f0;
+}
+
+.dropdown-container {
+  position: relative;
+  margin-left: 10px;
+}
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}

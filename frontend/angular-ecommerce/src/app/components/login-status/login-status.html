@@ -1,0 +1,21 @@
+<div class="login-status-header">
+
+  <div *ngIf="isAuthenticated" class="login-status-user-info">
+    Welcome back <br> {{ userEmail }}!
+  </div>
+
+  <button *ngIf="!isAuthenticated" (click)="login()" class="security-btn">Login</button>
+
+  <!-- Bootstrap Dropdown from ng-bootstrap -->
+  <div *ngIf="isAuthenticated" ngbDropdown class="d-inline-block dropdown-container">
+    <button class="security-btn" id="dropdownMenu" ngbDropdownToggle>
+      Menu
+    </button>
+    <div ngbDropdownMenu aria-labelledby="dropdownMenu" class="dropdown-menu-right">
+      <button ngbDropdownItem routerLink="/members">Member</button>
+      <button ngbDropdownItem routerLink="/order-history">Orders</button>
+      <button ngbDropdownItem (click)="logout()">Logout</button>
+    </div>
+  </div>
+
+</div>
